@@ -1,0 +1,43 @@
+@use "../abstracts/colors" as *;
+
+.btn {
+  display: inline-block;
+  font-weight: 600;
+  padding: 0.5em 1.5em;
+  color: $clr-text-primary;
+}
+
+.hero__text--button {
+  background-color: $clr-primary;
+  font-size: 2rem;
+  border-radius: 1rem;
+  margin-top: 2rem;
+
+  transition: transform linear 100ms, box-shadow linear 100ms;
+
+  &:hover,
+  &:focus {
+    transform: translateY(-0.3rem);
+    box-shadow: 0px 8px 20px -7px $clr-shadow;
+  }
+
+  &:active {
+    transform: translateY(-0.1rem);
+    box-shadow: 0px 8px 10px -7px $clr-shadow;
+  }
+}
+
+.projects__card--text-btn {
+  border: 1px solid $clr-text-primary;
+  font-size: 1.7rem;
+  border-radius: 3rem;
+  margin-top: 2rem;
+
+  transition: all linear 100ms;
+
+  &:hover,
+  &:focus {
+    background-color: $clr-primary;
+    border: 1px solid $clr-primary;
+  }
+}

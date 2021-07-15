@@ -1,0 +1,49 @@
+@use "../abstracts/colors" as *;
+@use "../abstracts/fonts" as *;
+
+header {
+  padding: 0 2rem;
+  // position: fixed;
+  // top: 0;
+  // width: 100%;
+  // z-index: 100;
+
+  & h1 {
+    font-family: $font-secondary;
+    font-size: 2.4rem;
+    font-weight: 400;
+  }
+}
+
+.header__nav {
+  display: flex;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  max-width: 120rem;
+  justify-content: space-between;
+
+  &--items {
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 2rem;
+    color: $clr-text-primary;
+
+    & li:not(:last-child) {
+      margin-right: 4rem;
+    }
+
+    & a {
+      padding: 0.9rem;
+      border-radius: 2rem;
+      transition: box-shadow linear 100ms, background-color linear 100ms;
+
+      &:hover,
+      &:active {
+        background-color: white;
+        box-shadow: 0px 0px 0px 2px $clr-text-primary inset;
+      }
+    }
+  }
+}

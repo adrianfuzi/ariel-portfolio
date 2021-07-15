@@ -1,0 +1,58 @@
+@use "../abstracts/colors" as *;
+@use "../abstracts/viewports" as *;
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+
+  &__text {
+    margin-top: 6rem;
+    padding-left: 2rem;
+    max-width: 40%;
+
+    @media (max-width: $vp-1028) {
+      max-width: 45%;
+    }
+
+    @media (max-width: $vp-960) {
+      max-width: 50%;
+    }
+
+    @media (max-width: $vp-600) {
+      max-width: 100%;
+    }
+
+    & h1 {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__image {
+    position: absolute !important;
+    right: 0;
+    top: -5rem;
+    z-index: -1;
+    width: 77rem;
+
+    @media (max-width: $vp-1100) {
+      width: 65rem;
+    }
+
+    @media (max-width: $vp-960) {
+      width: 55rem;
+    }
+
+    @media (max-width: $vp-800) {
+      width: 45rem;
+    }
+
+    @media (max-width: $vp-600) {
+      display: none !important;
+    }
+
+    @media (min-width: 120rem) {
+      width: 110rem;
+      top: -20rem;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+@use "../abstracts/colors" as *;
+
+footer {
+  margin: 2rem 0;
+  text-align: center;
+
+  & h2 {
+    margin-bottom: 6rem;
+
+    &::after {
+      content: "";
+      margin: 1rem auto;
+      position: relative;
+      display: block;
+      border-top: 3px solid $clr-primary;
+      width: 6%;
+    }
+  }
+
+  & p {
+    font-size: 1.8rem;
+  }
+}
+
+.footer__social {
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+
+    & li {
+      & a:hover,
+      & a:focus {
+        svg {
+          transform: translateY(-0.2rem);
+          fill: rgb(73, 73, 73);
+        }
+      }
+
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+    }
+  }
+
+  svg {
+    fill: $clr-text-primary;
+    width: 3.5rem;
+
+    transition: fill linear 100ms, transform linear 100ms;
+  }
+}
