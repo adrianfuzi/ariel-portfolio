@@ -86,7 +86,9 @@
         border-bottom-left-radius: 2rem;
 
         @media screen and (max-width: 60rem) {
-          border-radius: 2rem 2rem 0 0;
+          // border-radius: 2rem 2rem 0 0;
+          border-top-right-radius: 2rem;
+          border-bottom-left-radius: 0;
         }
       }
 
@@ -95,7 +97,9 @@
         border-bottom-right-radius: 2rem;
 
         @media screen and (max-width: 60rem) {
-          border-radius: 2rem 2rem 0 0;
+          // border-radius: 2rem 2rem 0 0;
+          border-top-left-radius: 2rem;
+          border-bottom-right-radius: 0;
         }
       }
 
