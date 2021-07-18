@@ -1,9 +1,19 @@
 @use "../abstracts/fonts" as *;
 @use "../abstracts/colors" as *;
 @use "../abstracts/viewports" as *;
+@use "../abstracts/keyframes" as *;
+
+#projects {
+  position: relative;
+  top: -8rem;
+}
 
 .projects {
-  margin: 25rem auto;
+  margin: 10rem auto;
+  opacity: 0;
+  transform: translateY(2rem);
+
+  transition: opacity linear 200ms, transform linear 200ms;
 
   & > h2 {
     text-align: center;
@@ -13,8 +23,8 @@
       margin: 1rem auto;
       position: relative;
       display: block;
-      border-top: 3px solid $clr-primary;
-      width: 8%;
+      border-top: 3px solid $clr-primary-3;
+      width: 10rem;
     }
   }
 
@@ -34,7 +44,7 @@
     @media (max-width: $vp-960) {
       flex-direction: column;
 
-      &:nth-child(even) {
+      &:nth-child(odd) {
         flex-flow: column-reverse;
       }
     }

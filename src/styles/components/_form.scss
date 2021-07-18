@@ -1,0 +1,42 @@
+@use "../abstracts/fonts" as *;
+@use "../abstracts/colors" as *;
+
+.form {
+  margin-bottom: 4rem;
+  text-align: left;
+  margin: 0 auto 4rem;
+  max-width: 60rem;
+
+  &__group {
+    display: flex;
+    flex-direction: column;
+    margin: 0 2rem;
+
+    &--label {
+      text-align: left;
+      font-size: 1.7rem;
+      margin-bottom: 0.5rem;
+    }
+
+    &--input {
+      font-family: $font-secondary;
+      font-size: 1.7rem;
+      padding: 1em 1.5em;
+      border: none;
+      border-radius: 0.5rem;
+      margin-bottom: 2rem;
+
+      transition: transform linear 100ms, box-shadow linear 100ms;
+
+      &::placeholder {
+        color: rgb(179, 179, 179);
+      }
+
+      &:focus {
+        outline: none;
+        transform: translateY(-0.3rem);
+        box-shadow: 0px 5px 18px -7px $clr-shadow;
+      }
+    }
+  }
+}

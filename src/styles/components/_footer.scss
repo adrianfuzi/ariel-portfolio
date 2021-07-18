@@ -1,5 +1,10 @@
 @use "../abstracts/colors" as *;
 
+#contact {
+  position: relative;
+  top: -8rem;
+}
+
 footer {
   margin: 2rem 0;
   text-align: center;
@@ -12,8 +17,8 @@ footer {
       margin: 1rem auto;
       position: relative;
       display: block;
-      border-top: 3px solid $clr-primary;
-      width: 6%;
+      border-top: 3px solid $clr-primary-3;
+      width: 10rem;
     }
   }
 
@@ -33,8 +38,7 @@ footer {
       & a:hover,
       & a:focus {
         svg {
-          transform: translateY(-0.2rem);
-          fill: rgb(73, 73, 73);
+          fill: $clr-secondary-2;
         }
       }
 
@@ -48,6 +52,6 @@ footer {
     fill: $clr-text-primary;
     width: 3.5rem;
 
-    transition: fill linear 100ms, transform linear 100ms;
+    transition: fill linear 100ms;
   }
 }

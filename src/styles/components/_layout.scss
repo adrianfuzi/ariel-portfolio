@@ -2,6 +2,11 @@
 @use "../abstracts/colors" as *;
 @use "../abstracts/viewports" as *;
 
+::selection {
+  color: $clr-secondary;
+  background-color: $clr-text-primary;
+}
+
 * {
   box-sizing: inherit;
   margin: 0;
@@ -26,6 +31,7 @@ main {
 body {
   color: $clr-text-secondary;
   font-family: $font-secondary;
+  margin-top: 8rem;
 }
 
 h1,
@@ -54,4 +60,9 @@ p {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.content-visible {
+  opacity: 1 !important;
+  transform: translate(0) !important;
 }

@@ -1,40 +1,40 @@
 import * as React from "react"
-// import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+import { useState } from "react"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Projects from "../components/project"
-import { Link } from "gatsby"
+import blob from "../images/blob.svg"
 
-const IndexPage = () => (
-  <Layout>
-    <Seo title="Home" />
-    <div className="hero">
-      <div className="hero__text">
-        <h1>Hello, my name is Ariel Korsten</h1>
-        <p>
-          I'm a Munich based UX/UI designer with a passion for creating user
-          centric experiences and interfaces.
-        </p>
-        <Link className="btn hero__text--button" to="#projects">
-          Projects
-        </Link>
+const IndexPage = () => {
+  const [visible, setVisible] = useState(false)
+  setTimeout(() => {
+    setVisible(true)
+  }, 300)
+
+  return (
+    <Layout>
+      <Seo title="Home" />
+      <div className="hero">
+        <div className={`hero__text ${visible ? "content-visible" : ""}`}>
+          <h1>Hello, my name is Ariel Korsten</h1>
+          <p>
+            I'm a Munich based UX/UI designer with a passion for creating user
+            centric experiences and interfaces.
+          </p>
+          <a className="btn hero__text--button" href="#projects">
+            Projects
+          </a>
+        </div>
+        <img
+          className="hero__illustration"
+          src={blob}
+          alt="Hero Illustration"
+        ></img>
       </div>
-      <StaticImage
-        className="hero__image"
-        src="../images/blob.png"
-        quality={95}
-        formats={["AUTO", "WEBP", "AVIF"]}
-        alt="Ariel"
-      />
-    </div>
-    <Projects />
-    {/* <p>
-      <Link to="/page-2/">Go to page 2</Link> <br />
-      <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-    </p> */}
-  </Layout>
-)
+      <Projects />
+    </Layout>
+  )
+}
 
 export default IndexPage

@@ -1,6 +1,7 @@
 @use "../abstracts/colors" as *;
 
 .btn {
+  cursor: pointer;
   display: inline-block;
   font-weight: 600;
   padding: 0.5em 1.5em;
@@ -8,10 +9,11 @@
 }
 
 .hero__text--button {
-  background-color: $clr-primary;
+  background-color: $clr-primary-2;
   font-size: 2rem;
   border-radius: 1rem;
   margin-top: 2rem;
+  padding: 0.5em 2.5em;
 
   transition: transform linear 100ms, box-shadow linear 100ms;
 
@@ -37,7 +39,50 @@
 
   &:hover,
   &:focus {
-    background-color: $clr-primary;
-    border: 1px solid $clr-primary;
+    background-color: $clr-primary-2;
+    border: 1px solid $clr-primary-2;
+  }
+}
+
+.btn-submit {
+  font-size: 1.7rem;
+  padding: 0.7em 1.7em;
+  margin-left: 2rem;
+  border: none;
+  border-radius: 2rem;
+  background-color: $clr-primary-2;
+
+  transition: transform linear 100ms, box-shadow linear 100ms;
+
+  &:hover,
+  &:focus {
+    transform: translateY(-0.3rem);
+    box-shadow: 0px 5px 20px -7px $clr-shadow;
+  }
+
+  &:active {
+    transform: translateY(-0.1rem);
+    box-shadow: 0px 8px 10px -7px $clr-shadow;
+  }
+}
+
+.about__main--button {
+  font-size: 1.7rem;
+  background-color: $clr-primary-2;
+  margin-top: 2rem;
+  border: 1px solid $clr-primary-2;
+  border-radius: 1rem;
+
+  transition: transform linear 100ms, box-shadow linear 100ms;
+
+  &:hover,
+  &:focus {
+    transform: translateY(-0.3rem);
+    box-shadow: 0px 5px 20px -7px $clr-shadow;
+  }
+
+  &:active {
+    transform: translateY(-0.1rem);
+    box-shadow: 0px 8px 10px -7px $clr-shadow;
   }
 }
