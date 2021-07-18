@@ -38,10 +38,10 @@
     border-radius: 2rem;
     box-shadow: -1px 6px 25px -8px $clr-shadow;
 
-    @media (max-width: $vp-1100) {
+    @media screen and (max-width: $vp-1100) {
       max-width: 80vw;
     }
-    @media (max-width: $vp-960) {
+    @media screen and (max-width: $vp-960) {
       flex-direction: column;
 
       &:nth-child(odd) {
@@ -68,7 +68,7 @@
       align-self: center;
       width: 50%;
 
-      @media (max-width: 60rem) {
+      @media screen and (max-width: 60rem) {
         width: 100%;
         padding: 4rem;
       }
@@ -85,7 +85,7 @@
         border-top-left-radius: 2rem;
         border-bottom-left-radius: 2rem;
 
-        @media (max-width: 60rem) {
+        @media screen and (max-width: 60rem) {
           border-radius: 2rem 2rem 0 0;
         }
       }
@@ -94,12 +94,12 @@
         border-top-right-radius: 2rem;
         border-bottom-right-radius: 2rem;
 
-        @media (max-width: 60rem) {
+        @media screen and (max-width: 60rem) {
           border-radius: 2rem 2rem 0 0;
         }
       }
 
-      @media (max-width: 60rem) {
+      @media screen and (max-width: 60rem) {
         width: 100%;
       }
     }

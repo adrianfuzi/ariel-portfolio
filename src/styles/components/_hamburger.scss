@@ -8,7 +8,7 @@
 
   z-index: 100;
 
-  @media (min-width: $vp-500) {
+  @media screen and (min-width: $vp-500) {
     display: none;
   }
 
@@ -59,7 +59,7 @@
     clip-path: circle(0px at top right);
     transition: clip-path ease-in-out 300ms;
 
-    @media (min-width: $vp-500) {
+    @media screen and (min-width: $vp-500) {
       display: none;
     }
 

@@ -7,7 +7,7 @@
     justify-content: space-between;
     margin: 4rem 2rem;
 
-    @media (max-width: $vp-800) {
+    @media screen and (max-width: $vp-800) {
       flex-direction: column;
     }
 
@@ -18,7 +18,7 @@
 
       transition: opacity linear 200ms, transform linear 200ms;
 
-      @media (max-width: $vp-800) {
+      @media screen and (max-width: $vp-800) {
         max-width: 100%;
       }
 
@@ -47,7 +47,7 @@
 
     transition: opacity linear 200ms, transform linear 200ms;
 
-    @media (max-width: $vp-800) {
+    @media screen and (max-width: $vp-800) {
       flex-direction: column;
       align-items: center;
     }
@@ -59,7 +59,7 @@
     & ul {
       margin-left: 2.5rem;
 
-      @media (max-width: $vp-800) {
+      @media screen and (max-width: $vp-800) {
         margin: 0 0 4rem 6.5rem;
       }
 
@@ -74,7 +74,7 @@
 
     &--category {
       & h3 {
-        @media (max-width: $vp-800) {
+        @media screen and (max-width: $vp-800) {
           width: 25rem;
           text-align: center;
         }

@@ -6,7 +6,7 @@
   display: flex;
   justify-content: space-between;
 
-  @media (max-width: $vp-600) {
+  @media screen and (max-width: $vp-600) {
     flex-direction: column;
   }
 
@@ -19,18 +19,18 @@
 
     transition: opacity linear 200ms, transform linear 200ms;
 
-    @media (max-width: $vp-1100) {
+    @media screen and (max-width: $vp-1100) {
       max-width: 50%;
     }
 
-    @media (max-width: $vp-600) {
+    @media screen and (max-width: $vp-600) {
       max-width: 100%;
     }
 
     & h1 {
       margin-bottom: 2rem;
 
-      @media (max-width: $vp-800) {
+      @media screen and (max-width: $vp-800) {
         font-size: 5.4rem;
       }
     }
@@ -41,11 +41,11 @@
 
     animation: heroAnimation 1000ms;
 
-    @media (max-width: $vp-1100) {
+    @media screen and (max-width: $vp-1100) {
       max-width: 50%;
     }
 
-    @media (max-width: $vp-600) {
+    @media screen and (max-width: $vp-600) {
       max-width: 100%;
       margin: 0 2rem;
     }

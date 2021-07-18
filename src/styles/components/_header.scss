@@ -38,7 +38,7 @@ header {
     font-size: 2rem;
     color: $clr-text-primary;
 
-    @media (max-width: $vp-500) {
+    @media screen and (max-width: $vp-500) {
       display: none;
     }
 

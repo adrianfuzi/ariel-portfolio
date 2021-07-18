@@ -18,7 +18,7 @@ html {
   font-size: $font-base;
   background-color: $clr-secondary;
 
-  @media (max-width: $vp-960) {
+  @media screen and (max-width: $vp-960) {
     font-size: $font-medium;
   }
 }
