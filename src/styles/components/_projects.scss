@@ -68,43 +68,39 @@
       align-self: center;
       width: 50%;
 
-      @media screen and (max-width: 60rem) {
+      @media screen and (max-width: $vp-960) {
         width: 100%;
         padding: 4rem;
       }
     }
 
     &--image {
-      width: 50%;
+      width: 50% !important;
 
       & img {
         transition: transform linear 200ms !important;
       }
 
       &:nth-child(odd) {
-        border-top-left-radius: 2rem;
-        border-bottom-left-radius: 2rem;
+        border-top-left-radius: 2rem !important;
+        border-bottom-left-radius: 2rem !important;
 
-        @media screen and (max-width: 60rem) {
-          // border-radius: 2rem 2rem 0 0;
-          border-top-right-radius: 2rem;
-          border-bottom-left-radius: 0;
+        @media screen and (max-width: $vp-960) {
+          border-radius: 2rem 2rem 0 0 !important;
         }
       }
 
       &:nth-child(even) {
-        border-top-right-radius: 2rem;
-        border-bottom-right-radius: 2rem;
+        border-top-right-radius: 2rem !important;
+        border-bottom-right-radius: 2rem !important;
 
-        @media screen and (max-width: 60rem) {
-          // border-radius: 2rem 2rem 0 0;
-          border-top-left-radius: 2rem;
-          border-bottom-right-radius: 0;
+        @media screen and (max-width: $vp-960) {
+          border-radius: 2rem 2rem 0 0 !important;
         }
       }
 
-      @media screen and (max-width: 60rem) {
-        width: 100%;
+      @media screen and (max-width: $vp-960) {
+        width: 100% !important;
       }
     }
   }
