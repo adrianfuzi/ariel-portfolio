@@ -76,26 +76,29 @@
 
     &--image {
       width: 50% !important;
+      // For Safari and iOS compatibility: By default the <img> element is placed on top of the gatsby-image-wrapper, so the stacking order needs to be defined.
+      position: relative;
+      z-index: 0;
 
       & img {
         transition: transform linear 200ms !important;
       }
 
       &:nth-child(odd) {
-        border-top-left-radius: 2rem !important;
-        border-bottom-left-radius: 2rem !important;
+        border-top-left-radius: 2rem;
+        border-bottom-left-radius: 2rem;
 
         @media screen and (max-width: $vp-960) {
-          border-radius: 2rem 2rem 0 0 !important;
+          border-radius: 2rem 2rem 0 0;
         }
       }
 
       &:nth-child(even) {
-        border-top-right-radius: 2rem !important;
-        border-bottom-right-radius: 2rem !important;
+        border-top-right-radius: 2rem;
+        border-bottom-right-radius: 2rem;
 
         @media screen and (max-width: $vp-960) {
-          border-radius: 2rem 2rem 0 0 !important;
+          border-radius: 2rem 2rem 0 0;
         }
       }
 
