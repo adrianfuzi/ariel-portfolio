@@ -15,9 +15,10 @@
     padding: 0 2rem;
     max-width: 40%;
     opacity: 0;
-    transform: translateX(-2rem);
+    // transform: translateX(-2rem);
 
-    transition: opacity linear 200ms, transform linear 200ms;
+    // transition: opacity linear 200ms, transform linear 200ms;
+    transition: opacity linear 200ms;
 
     @media screen and (max-width: $vp-1100) {
       max-width: 50%;

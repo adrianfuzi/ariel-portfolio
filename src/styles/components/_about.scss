@@ -14,9 +14,8 @@
     &--text {
       max-width: 70%;
       opacity: 0;
-      transform: translateX(-2rem);
 
-      transition: opacity linear 200ms, transform linear 200ms;
+      transition: opacity linear 200ms;
 
       @media screen and (max-width: $vp-800) {
         max-width: 100%;
@@ -43,11 +42,12 @@
     justify-content: space-around;
     margin: 8rem 0;
     opacity: 0;
-    transform: translateY(2rem);
 
-    transition: opacity linear 200ms, transform linear 200ms;
+    transition: opacity linear 200ms;
 
-    @media screen and (max-width: $vp-800) {
+    flex-wrap: wrap;
+
+    @media screen and (max-width: $vp-600) {
       flex-direction: column;
       align-items: center;
     }
@@ -64,7 +64,7 @@
       }
 
       & li {
-        font-size: 2rem;
+        font-size: 2.2rem;
 
         &:not(:last-child) {
           margin-bottom: 1rem;

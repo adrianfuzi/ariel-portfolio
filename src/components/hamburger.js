@@ -11,7 +11,6 @@ const Hamburger = () => {
         onClick={() => setIsOpen(!isOpen)}
         onKeyDown={() => setIsOpen(!isOpen)}
         role="button"
-        tabIndex={0}
       >
         <div className="burger__bar-1" />
         <div className="burger__bar-2" />

@@ -3,6 +3,7 @@
 @use "../abstracts/viewports" as *;
 @use "../abstracts/keyframes" as *;
 
+// Scroll anchor <div>
 #projects {
   position: relative;
   top: -8rem;
@@ -11,9 +12,8 @@
 .projects {
   margin: 10rem auto;
   opacity: 0;
-  transform: translateY(2rem);
 
-  transition: opacity linear 200ms, transform linear 200ms;
+  transition: opacity linear 200ms;
 
   & > h2 {
     text-align: center;
@@ -41,12 +41,17 @@
     @media screen and (max-width: $vp-1100) {
       max-width: 80vw;
     }
+
     @media screen and (max-width: $vp-960) {
       flex-direction: column;
 
       &:nth-child(odd) {
         flex-flow: column-reverse;
       }
+    }
+
+    @media screen and (max-width: $vp-600) {
+      max-width: 87vw;
     }
 
     &:hover {
@@ -80,6 +85,10 @@
       position: relative;
       z-index: 0;
 
+      @media screen and (max-width: $vp-960) {
+        width: 100% !important;
+      }
+
       & img {
         transition: transform linear 200ms !important;
       }
@@ -100,10 +109,6 @@
         @media screen and (max-width: $vp-960) {
           border-radius: 2rem 2rem 0 0;
         }
-      }
-
-      @media screen and (max-width: $vp-960) {
-        width: 100% !important;
       }
     }
   }
