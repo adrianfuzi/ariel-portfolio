@@ -3,7 +3,7 @@ import { useState } from "react"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import Projects from "../components/project"
+import Projects from "../components/projects"
 import blob from "../images/blob.svg"
 
 const IndexPage = () => {

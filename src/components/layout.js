@@ -15,8 +15,8 @@ const Layout = ({ children }) => {
       <Header siteTitle="Ariel Korsten" />
       <div>
         <main>{children}</main>
-        <Footer />
       </div>
+      <Footer />
     </>
   )
 }

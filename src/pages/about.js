@@ -26,17 +26,31 @@ const About = () => {
             className={`about__main--text ${visible ? "content-visible" : ""}`}
           >
             <h1>About me</h1>
+            <h3>Hi, I’m Ariel!</h3>
             <p>
-              Ut eget metus in enim dictum tempor vitae ut enim. Sed malesuada
-              condimentum accumsan. Ut ligula ligula, faucibus ac blandit a,
-              condimentum et velit. Proin quis ullamcorper sapien. Etiam aliquet
-              in quam eget convallis. Nulla tempor tortor vitae molestie
-              volutpat. Sed et nisi nulla. Maecenas luctus venenatis rutrum.
-              Mauris sed molestie orci. Donec eget sem blandit massa feugiat
-              commodo vitae ut metus. Morbi euismod enim vitae turpis porttitor
-              semper. Aliquam quis odio et mi porttitor posuere eget vel urna.
-              In luctus ornare tempus. Praesent faucibus sem vitae sem bibendum
-              tempus. Nunc venenatis luctus aliquam. Nulla facilisi.
+              I’m a UX/UI Designer based in Munich. From my time working in a
+              nonprofit, I knew that I wanted to continue to work with and help
+              people, but I never thought I’d be able to do it in a way like
+              user experience design. It’s the perfect meld of people-based
+              connection and research, problem-solving, and technology -- all
+              things that I enjoy! Since moving to Germany from the US, I’ve
+              been challenged with learning a new language and integrating into
+              a new culture. Now that I’ve accomplished that, I’ve turned my
+              focus towards changing careers where I can use my skills and
+              interests in an ever-evolving field of work.
+            </p>
+            <p>
+              I recently completed a nine-month, intensive project-based UX
+              training program through CareerFoundry, which focused on areas of
+              study such as user research, personas, user flows and journeys,
+              prototyping, information architecture, and visual design
+              fundamentals.
+            </p>
+            <p>
+              When I’m not coming up with design solutions, you can find me
+              baking in my urban jungle flat, cruising the countryside on a
+              bicycle tour with my husband, or out at the lake with my friends
+              and few Bavarian beers.
             </p>
             <Link className="btn about__main--button" to="#projects">
               Resume
