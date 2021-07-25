@@ -11,19 +11,6 @@ header {
 
   background-color: $clr-secondary;
   transition: filter linear 200ms;
-
-  & h1 {
-    font-family: $font-primary;
-    font-size: 2.4rem;
-    font-weight: 600;
-    letter-spacing: 0.1rem;
-
-    transition: color linear 100ms;
-
-    &:hover {
-      color: $clr-primary;
-    }
-  }
 }
 
 .shadow header {
@@ -33,9 +20,39 @@ header {
 .header__nav {
   display: flex;
   margin: 0 auto;
-  padding: 1.5rem 0;
+  padding: 0.5rem 0 0;
   max-width: 120rem;
   justify-content: space-between;
+
+  &--title {
+    & svg {
+      transition: transform linear 100ms;
+
+      @media screen and (max-width: $vp-500) {
+        width: 50px;
+      }
+    }
+
+    &:hover {
+      & svg {
+        transform: scale(1.07);
+      }
+    }
+
+    & h1 {
+      display: inline-block;
+      position: relative;
+      top: -2rem;
+      left: 1rem;
+      font-family: $font-secondary;
+      font-size: 2rem;
+      font-weight: 400;
+
+      @media screen and (max-width: $vp-960) {
+        top: -2.5rem;
+      }
+    }
+  }
 
   &--items {
     font-weight: 600;
