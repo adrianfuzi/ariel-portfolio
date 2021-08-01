@@ -24,7 +24,7 @@ const Projects = () => {
             yourself) home improvement project. The goal of HandyHelper is to
             empower its users to complete improvements to their homes.
           </p>
-          <Link className="btn projects__card--text-btn" to="/project-1">
+          <Link className="btn projects__card--text-btn" to="/handyhelper">
             View Project
           </Link>
         </div>
