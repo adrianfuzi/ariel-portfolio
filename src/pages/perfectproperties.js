@@ -38,6 +38,30 @@ const Project2 = () => {
             formats={["AUTO", "WEBP", "AVIF"]}
             alt="1"
           />
+          <StaticImage
+            className="project__container--img"
+            src="../images/project-2/2.png"
+            width={1400}
+            quality={95}
+            formats={["AUTO", "WEBP", "AVIF"]}
+            alt="1"
+          />
+          <StaticImage
+            className="project__container--img"
+            src="../images/project-2/3.png"
+            width={1400}
+            quality={95}
+            formats={["AUTO", "WEBP", "AVIF"]}
+            alt="1"
+          />
+          <StaticImage
+            className="project__container--img"
+            src="../images/project-2/4.png"
+            width={1400}
+            quality={95}
+            formats={["AUTO", "WEBP", "AVIF"]}
+            alt="1"
+          />
           <div className="project__container--video">
             <iframe
               src="https://www.youtube.com/embed/ltj0sAPZwoA"
@@ -47,6 +71,14 @@ const Project2 = () => {
               allowFullScreen
             ></iframe>
           </div>
+          <StaticImage
+            className="project__container--img"
+            src="../images/project-2/5.png"
+            width={1400}
+            quality={95}
+            formats={["AUTO", "WEBP", "AVIF"]}
+            alt="1"
+          />
         </div>
       </div>
     </Layout>
