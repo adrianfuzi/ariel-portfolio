@@ -1,10 +1,11 @@
 import * as React from "react"
 import { useState } from "react"
-import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+
+import resume from "../assets/cv_ariel_korsten.pdf"
 
 const About = () => {
   const [visible, setVisible] = useState(false)
@@ -52,9 +53,14 @@ const About = () => {
               bicycle tour with my husband, or out at the lake with my friends
               and few Bavarian beers.
             </p>
-            <Link className="btn about__main--button" to="#projects">
-              Resume
-            </Link>
+            <a
+              className="btn about__main--button"
+              href={resume}
+              target="_blank"
+              rel="noreferrer"
+            >
+              See Resume
+            </a>
           </div>
           <div className="about__main--image">
             <StaticImage

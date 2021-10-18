@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Ariel Korsten | Portfolio`,
+    title: `Ariel Korsten`,
     description: `My portfolio website for UX design projects`,
     author: `arielkorsten`,
     siteUrl: `https://arielkorsten.com`,

@@ -48,9 +48,15 @@ const Projects = () => {
           alt="Project 2 Cover"
         />
         <div className="projects__card--text">
-          <h3>WordPal</h3>
-          <p>Coming soon...</p>
-          <Link className="btn btn--inactive projects__card--text-btn">
+          <h3>Perfect Properties</h3>
+          <p>
+            Perfect Properties is a responsive web app that makes it easy to
+            find investment real estate properties.
+          </p>
+          <Link
+            className="btn projects__card--text-btn"
+            to="/perfectproperties"
+          >
             View Project
           </Link>
         </div>
@@ -58,7 +64,7 @@ const Projects = () => {
 
       <div className="projects__card">
         <div className="projects__card--text">
-          <h3>CF UI Design Project</h3>
+          <h3>WordPal</h3>
           <p>Coming soon...</p>
           <Link className="btn btn--inactive projects__card--text-btn">
             View Project
@@ -66,7 +72,7 @@ const Projects = () => {
         </div>
         <StaticImage
           className="projects__card--image"
-          src="../images/project-3/cover.jpg"
+          src="../images/project-3/cover.png"
           width={300}
           quality={95}
           formats={["AUTO", "WEBP", "AVIF"]}

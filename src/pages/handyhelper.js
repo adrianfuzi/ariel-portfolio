@@ -194,7 +194,7 @@ const Project1 = () => {
             <iframe
               src="https://www.youtube.com/embed/BTds1J6yaQo"
               title="HandyHelper"
-              frameborder="0"
+              frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>
