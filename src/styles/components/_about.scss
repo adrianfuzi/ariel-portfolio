@@ -25,6 +25,10 @@
       & > h1 {
         font-size: 5.2rem;
         margin-bottom: 2rem;
+
+        @media screen and (max-width: $vp-600) {
+          text-align: center;
+        }
       }
 
       & > h3 {

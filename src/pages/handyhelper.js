@@ -5,6 +5,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import ProjectsOther from "../components/projects-other"
 
 const Project1 = () => {
   const [visible, setVisible] = useState(false)
@@ -209,6 +210,7 @@ const Project1 = () => {
           />
         </div>
       </div>
+      <ProjectsOther />
     </Layout>
   )
 }

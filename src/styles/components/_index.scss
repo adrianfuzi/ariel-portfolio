@@ -25,10 +25,16 @@
     @media screen and (max-width: $vp-600) {
       max-width: 100%;
       margin-top: 0rem;
+
+      text-align: center;
     }
 
     & h1 {
       margin-bottom: 2rem;
+
+      @media screen and (max-width: $vp-600) {
+        line-height: 6.5rem;
+      }
 
       @media screen and (max-width: $vp-800) {
         font-size: 5.4rem;
@@ -47,7 +53,7 @@
 
     @media screen and (max-width: $vp-600) {
       max-width: 100%;
-      margin: 0 2rem;
+      margin: 2rem 2rem 0 2rem;
     }
   }
 }

@@ -4,11 +4,13 @@
   &__text {
     margin-bottom: 2rem;
     opacity: 0;
+    text-align: center;
 
     transition: opacity 200ms linear;
 
     & > h1 {
       margin-bottom: 1rem;
+      line-height: 6.5rem;
     }
   }
 

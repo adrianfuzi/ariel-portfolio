@@ -1,0 +1,108 @@
+@use "../abstracts/colors" as *;
+@use "../abstracts/viewports" as *;
+
+.other {
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+
+    h3 {
+        margin-bottom: 3rem;
+        text-align: center;
+
+        &::before {
+            content: "";
+            margin: 1rem auto;
+            position: relative;
+            right: 1.5rem;
+            display: inline-block;
+            border-top: 2px solid $clr-primary-3;
+            width: 5rem;
+
+            @media screen and (max-width: $vp-600) {
+                width: 3rem;
+            }
+        }
+
+        &::after {
+            content: "";
+            margin: 1rem auto;
+            position: relative;
+            left: 1.5rem;
+            display: inline-block;
+            border-top: 2px solid $clr-primary-3;
+            width: 5rem;
+
+            @media screen and (max-width: $vp-600) {
+                width: 3rem;
+            }
+        }
+    }
+    &__container {
+        justify-content: center;
+        display: flex;
+
+        @media screen and (max-width: $vp-600) {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &--card {
+            box-shadow: 0 .5rem 1.5rem $clr-shadow;
+            border-radius: 1rem;
+            transition: 300ms transform, 300ms box-shadow, 300ms scale;
+
+            &:hover {
+                transform: translateY(-.5rem);
+                transform: scale(1.05);
+                box-shadow: 0 1rem 2rem $clr-shadow;
+
+                a p {
+                    opacity: .95;
+                }
+            }
+
+            a p {
+                background-color: $clr-tertiary;
+                border-bottom-left-radius: 1rem;
+                border-bottom-right-radius: 1rem;
+                position: relative;
+                top: -4.28rem;
+                text-align: center;
+                font-weight: 600;
+                letter-spacing: .1rem;
+                padding: .5rem;
+                opacity: 0;
+                width: 100%;
+
+                transition: 300ms opacity;
+
+                @media screen and (max-width: $vp-600) {
+                   top: 0;
+                   opacity: 1;
+                }
+            }
+
+            &:not(:last-child) {
+                margin-right: 4rem;
+
+                @media screen and (max-width: $vp-600) {
+                    margin-right: 0;
+                    margin-bottom: 4rem;
+                }
+            }
+
+            &-img {
+                height: 100%;
+                border-top-left-radius: 1rem;
+                border-top-right-radius: 1rem;
+                border-bottom-left-radius: 1rem;
+                border-bottom-right-radius: 1rem;
+
+                @media screen and (max-width: $vp-600) {
+                    border-bottom-left-radius: 0;
+                    border-bottom-right-radius: 0;
+                }
+            }
+        }
+    }
+}
