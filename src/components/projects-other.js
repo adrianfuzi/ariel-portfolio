@@ -1,9 +1,10 @@
 import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
+import { globalHistory } from "@reach/router"
 
 const ProjectsOther = () => {
-  const currentPath = window.location.pathname
+  const currentPath = globalHistory.location.pathname
   const p1 = "/handyhelper"
   const p2 = "/perfectproperties"
 
