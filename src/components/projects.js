@@ -65,8 +65,11 @@ const Projects = () => {
       <div className="projects__card">
         <div className="projects__card--text">
           <h3>WordPal</h3>
-          <p>Coming soon...</p>
-          <Link className="btn btn--inactive projects__card--text-btn">
+          <p>
+            WordPal is a learning application that allows people to create their
+            own custom flashcards. No frills, just simple, practical learning.
+          </p>
+          <Link className="btn projects__card--text-btn" to="/wordpal">
             View Project
           </Link>
         </div>

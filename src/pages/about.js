@@ -95,15 +95,18 @@ const About = () => {
               <li>Organization</li>
               <li>Critical Thinking</li>
               <li>Problem Solving</li>
+              <li>Listening</li>
+              <li>Adaptability</li>
             </ul>
           </div>
           <div className="about__skills--category">
             <h3>Main Tools</h3>
             <ul>
+              <li>Pen & Paper</li>
               <li>Figma</li>
               <li>Adobe XD</li>
-              <li>InVision</li>
-              <li>Pen & Paper</li>
+              <li>Canva</li>
+              <li>Balsamiq</li>
             </ul>
           </div>
         </div>

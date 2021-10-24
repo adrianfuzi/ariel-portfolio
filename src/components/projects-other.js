@@ -29,7 +29,7 @@ const ProjectsOther = () => {
             </div>
 
             <div className="other__container--card">
-              <Link>
+              <Link to="/wordpal">
                 <StaticImage
                   className="other__container--card-img"
                   src="../images/project-3/cover.png"
@@ -66,7 +66,7 @@ const ProjectsOther = () => {
             </div>
 
             <div className="other__container--card">
-              <Link>
+              <Link to="/wordpal">
                 <StaticImage
                   className="other__container--card-img"
                   src="../images/project-3/cover.png"
@@ -85,34 +85,36 @@ const ProjectsOther = () => {
   } else {
     return (
       <>
-        <h3>See Other Projects</h3>
         <div className="other">
-          <div className="other__container--card">
-            <Link to="/handyhelper">
-              <StaticImage
-                className="other__container--card-img"
-                src="../images/project-1/cover.png"
-                width={300}
-                quality={95}
-                formats={["AUTO", "WEBP", "AVIF"]}
-                alt="HandyHelper"
-              />
-              <p>HandyHelper</p>
-            </Link>
-          </div>
+          <h3>See Other Projects</h3>
+          <div className="other__container">
+            <div className="other__container--card">
+              <Link to="/handyhelper">
+                <StaticImage
+                  className="other__container--card-img"
+                  src="../images/project-1/cover.png"
+                  width={300}
+                  quality={95}
+                  formats={["AUTO", "WEBP", "AVIF"]}
+                  alt="HandyHelper"
+                />
+                <p>HandyHelper</p>
+              </Link>
+            </div>
 
-          <div className="other__container--card">
-            <Link to="/perfectproperties">
-              <StaticImage
-                className="other__container--card-img"
-                src="../images/project-2/cover.png"
-                width={300}
-                quality={95}
-                formats={["AUTO", "WEBP", "AVIF"]}
-                alt="Perfect Properties"
-              />
-              <p>Perfect Properties</p>
-            </Link>
+            <div className="other__container--card">
+              <Link to="/perfectproperties">
+                <StaticImage
+                  className="other__container--card-img"
+                  src="../images/project-2/cover.png"
+                  width={300}
+                  quality={95}
+                  formats={["AUTO", "WEBP", "AVIF"]}
+                  alt="Perfect Properties"
+                />
+                <p>Perfect Properties</p>
+              </Link>
+            </div>
           </div>
         </div>
       </>

@@ -37,7 +37,7 @@ const Project2 = () => {
             width={1400}
             quality={95}
             formats={["AUTO", "WEBP", "AVIF"]}
-            alt="1"
+            alt="About and User Persona"
           />
           <StaticImage
             className="project__container--img"
@@ -45,7 +45,7 @@ const Project2 = () => {
             width={1400}
             quality={95}
             formats={["AUTO", "WEBP", "AVIF"]}
-            alt="1"
+            alt="User Flow, Wireframing, Moodboard"
           />
           <StaticImage
             className="project__container--img"
@@ -53,7 +53,7 @@ const Project2 = () => {
             width={1400}
             quality={95}
             formats={["AUTO", "WEBP", "AVIF"]}
-            alt="1"
+            alt="Style Guide, Responsive Design"
           />
           <StaticImage
             className="project__container--img"
@@ -61,7 +61,7 @@ const Project2 = () => {
             width={1400}
             quality={95}
             formats={["AUTO", "WEBP", "AVIF"]}
-            alt="1"
+            alt="Final Mockups"
           />
           <div className="project__container--video">
             <iframe
@@ -78,7 +78,7 @@ const Project2 = () => {
             width={1400}
             quality={95}
             formats={["AUTO", "WEBP", "AVIF"]}
-            alt="1"
+            alt="Thank You"
           />
         </div>
       </div>
