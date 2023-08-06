@@ -1,3 +1,6 @@
+@use "../abstracts/viewports" as *;
+@use "../abstracts/colors" as *;
+
 .project {
   margin: 4rem 2rem;
 
@@ -12,6 +15,15 @@
       margin-bottom: 1rem;
       line-height: 6.5rem;
     }
+
+    &--info {
+      margin-top: 2rem;
+
+      &-link {
+        color: $clr-text-link;
+        text-decoration: underline;
+      }
+    }
   }
 
   &__container {
@@ -20,6 +32,17 @@
 
     &--img {
       width: 100%;
+    }
+
+    &--iframe {
+      width: 100%;
+      min-height: 90vh;
+      border: none;
+      margin-bottom: 4rem;
+
+      @media screen and (max-width: $vp-960) {
+        min-height: 40vh;
+      }
     }
 
     &--video {

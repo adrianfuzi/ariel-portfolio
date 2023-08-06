@@ -33,19 +33,15 @@ const About = () => {
               nonprofit, I knew that I wanted to continue to work with and help
               people, but I never thought I’d be able to do it in a way like
               user experience design. It’s the perfect meld of people-based
-              connection and research, problem-solving, and technology -- all
-              things that I enjoy! Since moving to Germany from the US, I’ve
-              been challenged with learning a new language and integrating into
-              a new culture. Now that I’ve accomplished that, I’ve turned my
-              focus towards changing careers where I can use my skills and
-              interests in an ever-evolving field of work.
+              connection and research, problem-solving, and technology—all
+              things that I enjoy!
             </p>
             <p>
-              I recently completed a nine-month, intensive project-based UX
-              training program through CareerFoundry, which focused on areas of
-              study such as user research, personas, user flows and journeys,
-              prototyping, information architecture, and visual design
-              fundamentals.
+              I love working on tricky, technical topics and projects and
+              turning them into simple, user-friendly digital experiences that
+              anyone can get the hang of. Each project's unique challenges keep
+              me on my toes, and there's nothing better than seeing design make
+              a real difference.
             </p>
             <p>
               When I’m not coming up with design solutions, you can find me
@@ -59,7 +55,7 @@ const About = () => {
               target="_blank"
               rel="noreferrer"
             >
-              See Resume
+              See resume
             </a>
           </div>
           <div className="about__main--image">
@@ -75,7 +71,8 @@ const About = () => {
         <div
           className={`about__skills ${skillsVisible ? "content-visible" : ""}`}
         >
-          <div className="about__skills--category">
+          {/* Enable to show skills section: */}
+          {/* <div className="about__skills--category">
             <h3>UX/UI Design</h3>
             <ul>
               <li>UX Research</li>
@@ -108,7 +105,7 @@ const About = () => {
               <li>Canva</li>
               <li>Balsamiq</li>
             </ul>
-          </div>
+          </div> */}
         </div>
       </div>
     </Layout>

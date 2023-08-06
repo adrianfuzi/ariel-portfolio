@@ -79,6 +79,15 @@
       }
     }
 
+    &--tags {
+      font-size: 1.2rem !important; //need "!important" to overwrite "& p" style
+      font-weight: 400;
+      text-transform: uppercase;
+      margin-top: -1.2rem; // To offset the headline bottom margin
+      margin-bottom: 1.6rem;
+      color: $clr-text-secondary;
+    }
+
     &--image {
       width: 50% !important;
       // For Safari and iOS compatibility: By default the <img> element is placed on top of the gatsby-image-wrapper, so the stacking order needs to be defined.

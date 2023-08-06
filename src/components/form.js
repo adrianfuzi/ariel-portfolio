@@ -52,7 +52,7 @@ const Form = () => (
     </div>
 
     <button type="submit" name="submit" className="btn btn-submit">
-      Send Message
+      Send message
     </button>
   </form>
 )

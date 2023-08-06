@@ -5,8 +5,8 @@ import { globalHistory } from "@reach/router"
 
 const ProjectsOther = () => {
   const currentPath = globalHistory.location.pathname
-  const p1 = "/handyhelper"
-  const p2 = "/perfectproperties"
+  const p1 = "/simplify"
+  const p2 = "/handyhelper"
 
   if (currentPath === p1) {
     return (
@@ -14,6 +14,20 @@ const ProjectsOther = () => {
         <div className="other">
           <h3>See Other Projects</h3>
           <div className="other__container">
+            <div className="other__container--card">
+              <Link to="/handyhelper">
+                <StaticImage
+                  className="other__container--card-img"
+                  src="../images/project-1/cover.png"
+                  width={300}
+                  quality={95}
+                  formats={["AUTO", "WEBP", "AVIF"]}
+                  alt="HandyHelper"
+                />
+                <p>HandyHelper</p>
+              </Link>
+            </div>
+
             <div className="other__container--card">
               <Link to="/perfectproperties">
                 <StaticImage
@@ -25,20 +39,6 @@ const ProjectsOther = () => {
                   alt="Perfect Properties"
                 />
                 <p>Perfect Properties</p>
-              </Link>
-            </div>
-
-            <div className="other__container--card">
-              <Link to="/wordpal">
-                <StaticImage
-                  className="other__container--card-img"
-                  src="../images/project-3/cover.png"
-                  width={300}
-                  quality={95}
-                  formats={["AUTO", "WEBP", "AVIF"]}
-                  alt="WordPal"
-                />
-                <p>WordPal</p>
               </Link>
             </div>
           </div>
@@ -52,53 +52,16 @@ const ProjectsOther = () => {
           <h3>See Other Projects</h3>
           <div className="other__container">
             <div className="other__container--card">
-              <Link to="/handyhelper">
+              <Link to="/simplify">
                 <StaticImage
                   className="other__container--card-img"
-                  src="../images/project-1/cover.png"
+                  src="../images/project-4/cover.png"
                   width={300}
                   quality={95}
                   formats={["AUTO", "WEBP", "AVIF"]}
-                  alt="HandyHelper"
+                  alt="Simplifying Integration"
                 />
-                <p>HandyHelper</p>
-              </Link>
-            </div>
-
-            <div className="other__container--card">
-              <Link to="/wordpal">
-                <StaticImage
-                  className="other__container--card-img"
-                  src="../images/project-3/cover.png"
-                  width={300}
-                  quality={95}
-                  formats={["AUTO", "WEBP", "AVIF"]}
-                  alt="WordPal"
-                />
-                <p>WordPal</p>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </>
-    )
-  } else {
-    return (
-      <>
-        <div className="other">
-          <h3>See Other Projects</h3>
-          <div className="other__container">
-            <div className="other__container--card">
-              <Link to="/handyhelper">
-                <StaticImage
-                  className="other__container--card-img"
-                  src="../images/project-1/cover.png"
-                  width={300}
-                  quality={95}
-                  formats={["AUTO", "WEBP", "AVIF"]}
-                  alt="HandyHelper"
-                />
-                <p>HandyHelper</p>
+                <p>Simplifying Integration</p>
               </Link>
             </div>
 
@@ -113,6 +76,43 @@ const ProjectsOther = () => {
                   alt="Perfect Properties"
                 />
                 <p>Perfect Properties</p>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </>
+    )
+  } else {
+    return (
+      <>
+        <div className="other">
+          <h3>See Other Projects</h3>
+          <div className="other__container">
+            <div className="other__container--card">
+              <Link to="/simplify">
+                <StaticImage
+                  className="other__container--card-img"
+                  src="../images/project-4/cover.png"
+                  width={300}
+                  quality={95}
+                  formats={["AUTO", "WEBP", "AVIF"]}
+                  alt="Simplifying Integration"
+                />
+                <p>Simplifying Integration</p>
+              </Link>
+            </div>
+
+            <div className="other__container--card">
+              <Link to="/handyhelper">
+                <StaticImage
+                  className="other__container--card-img"
+                  src="../images/project-1/cover.png"
+                  width={300}
+                  quality={95}
+                  formats={["AUTO", "WEBP", "AVIF"]}
+                  alt="HandyHelper"
+                />
+                <p>HandyHelper</p>
               </Link>
             </div>
           </div>
